@@ -1,0 +1,82 @@
+@import "../../mixin.scss";
+
+.api-items{
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px; 
+    display: flex;
+    box-shadow: 0 23px 53px -10px #5F66AD;
+    width: calc(100%/3 - 14px);
+    margin: 7px;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        .item-detalis .item-description{
+            opacity: 0;
+        }
+      .item-hover{
+          transform: translateY(0);
+      }
+    }
+    .item-icons{
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        min-height: 150px;
+    }
+    h4{
+      font-size: 18px;
+      font-weight: bold;
+      color:$color-text-grey;   
+      margin-bottom: 5px;
+    }
+    .item-catagory{
+        color: $color-text-grey;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-family: inherit;
+    }
+    .item-description{
+        font-size: 16px;
+        color: $color-text-grey;
+        font-weight: 500;
+        transition: 300ms opacity;
+    }
+    .item-hover{
+        position: absolute;
+        background-color:#e2e5e7;
+        height: 90px;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 0 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transform: translateY(100%);
+        transition: 300ms transform;
+        @include center;
+        a, button{
+            flex: 1;
+            margin: 0 9px;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            @include center;
+            svg{
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+            }
+        }
+        a{
+            background-color: #141A31;
+            color: #ffffff;
+        }
+        button{
+            background-color: #ffffff;
+            color: #141A31;
+        }
+    }
+}

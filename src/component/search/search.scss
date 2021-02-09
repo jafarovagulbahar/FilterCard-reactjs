@@ -1,0 +1,33 @@
+@import "../../mixin.scss";
+
+.api-search{
+    width: 720px;
+    margin: 0 auto 70px;
+    position: relative;
+    .icon{
+        position: absolute;
+        top:0;
+        left: 20px;
+        height: 80px;
+        width: 70px;
+        @include center;
+        svg{
+            width: 34px;
+            height: 34px;
+           path{
+               stroke:#a2a2a2;
+           }
+        }
+    }
+    input{
+        width: 100%;
+        height: 80px;
+        border-radius: 100px;
+        border: 1px solid #DFE8ED;
+        padding: 0 20px 0 90px;
+        font-size: 18px;
+        color: #6B7289;
+    }&::placeholder{
+        color: #6B7289;
+    }
+}

@@ -1,0 +1,47 @@
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+body {
+  background: #FAFCFD;
+  padding: 100px 0;
+  text-align: center;
+  h3{
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 50px;
+      color: #0E1238;
+  }
+  .container{
+      width: 1122px;
+      text-align: left;
+      margin: 0 auto;
+      margin-top: 20px;
+      >h4{
+       font-size: 22px;
+       font-weight: bold;
+       color: $color-text-grey;
+       margin-bottom: 40px;
+      }
+      .api-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -7px;
+         
+      }
+  }
+}
